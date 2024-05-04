@@ -5,11 +5,33 @@
 //Train
 int main()
 {
-	allShapes shapes;
+	// POINT TESTING
+	/*Point p(1, 1);
+	Point p2(50, 50);
+	cout << p.getX() << endl;
+	cout << p.getY() << endl;
+
+	p.setPoint(5, 5);
+	cout << p.getX() << endl;
+	cout << p.getY() << endl;
+	
+	cout << (p + p2).getX() << endl;
+
+	cout << (++p).getX() << endl;
+	
+	cout << (5 * p).getX() << endl;
+
+	cout << (p += 5).getX() << endl;*/
+
+
+
+	//allShapes shapes;
 
 	Circle * c1 = new Circle( 3, "myCircle" );
 	Circle * c2 = new Circle( 2, "yourCircle" );
-
+	delete c1;
+	//delete c2;
+	/*
 	Square * s1 = new Square( 1, 1, 1, 1, "mySquare" );
 	Square * s2 = new Square( 2, 2, 2, 2, "yourSquare" );
 
@@ -127,7 +149,7 @@ int main()
 		cout << "Error with operator casting to int in class allShapes (-3)" << endl;
 
 
-	cout << "done" << endl;
+	cout << "done" << endl;*/
 
 	return 0;
 }
