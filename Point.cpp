@@ -45,7 +45,7 @@ Point Point::operator+(int num) const{
 }						//returns a new point with updated x(x+num) and y(y+num)
 const Point& Point::operator+=(int num){
 
-	this->setPoint(this->getX()* (this->getX() + num), this->getY()* (this->getY() + num));
+	this->setPoint(this->getX() + num, this->getY() + num);
 	return *this;
 }						//updates the point with x(x+num) and y(y+num) and returns the updated point
 

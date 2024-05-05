@@ -25,22 +25,21 @@ int main()
 
 
 
-	//allShapes shapes;
+	allShapes shapes;
 
 	Circle * c1 = new Circle( 3, "myCircle" );
 	Circle * c2 = new Circle( 2, "yourCircle" );
-	delete c1;
+	//delete c1;
 	//delete c2;
-	/*
+	
 	Square * s1 = new Square( 1, 1, 1, 1, "mySquare" );
 	Square * s2 = new Square( 2, 2, 2, 2, "yourSquare" );
 
 	Quad * q1 = new Quad( 2, 2, 2, 2, "myQuad" );
 	Quad * q2 = new Quad( 4, 3, 4, 3, "yourQuad" );
-
+	
 	if( Shape::numOfShapes() != 6 )
 		cout << "Error with numOfShapes = 6 (-3)" << endl;
-
 
 	shapes.addShape( c1 );
 	shapes.addShape( c2 );
@@ -48,7 +47,7 @@ int main()
 	shapes.addShape( s2 );
 	shapes.addShape( q1 );
 	shapes.addShape( q2 );
-
+	
 	if( shapes.totalArea() != 65 )
 		cout << "Error with totalArea = 65 (-3)" << endl;
 
@@ -82,7 +81,6 @@ int main()
 	Point myPoint3( 2, 2 );
 	Point myPoint4( 0, 0 );
 	Point myPoint5;
-
 	myPoint5 = myPoint4++;
 	myPoint5 = ++myPoint4;
 
@@ -148,6 +146,7 @@ int main()
 	if( size != 8 )
 		cout << "Error with operator casting to int in class allShapes (-3)" << endl;
 
+	/*
 
 	cout << "done" << endl;*/
 

@@ -1,11 +1,10 @@
 #include "Shape.h"
 int Shape::s_totalNumOfShapes = 0;
 
-Shape::Shape(const char* sn) : m_centerPoint(0, 0) {
+Shape::Shape(const char* sn) : m_centerPoint(0, 0), m_shapeName(nullptr) {
 
 	this->setName(sn);
 	++s_totalNumOfShapes;
-	cout << "shape ctor" << endl;
 
 }
 //Creates a new shape (name=sn,centerPoint = (0,0))
@@ -19,12 +18,11 @@ Shape::Shape(const Shape& other) : m_centerPoint(other.m_centerPoint) {
 
 Shape::~Shape() {
 
-	if (m_shapeName)
-		delete[] m_shapeName;
+	//if (m_shapeName)
+	//	delete[] m_shapeName;
 
 	--s_totalNumOfShapes;
 
-	cout << "shape dtor" << endl;
 
 
 }				//shape destructor
@@ -32,10 +30,10 @@ Shape::~Shape() {
 
 void Shape::setName(const char* name) { 
 	
-	if (m_shapeName)
-		delete[] m_shapeName;
+	//if (m_shapeName)
+	//	delete[] m_shapeName;
 
-	m_shapeName = _strdup(name); 
+	m_shapeName = strdup(name); 
 
 }	//sets the shape's name
 

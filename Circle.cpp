@@ -4,7 +4,6 @@ Circle::Circle(double r, const char* sn)
 	: Shape(sn)
 {
 
-	cout << "circle ctor " << endl;
 	this->setRadius(r);
 }	//create a circle with radius=1, name=sn and center=(0,0)
 
@@ -15,7 +14,6 @@ Circle::Circle(const Circle& other) : Shape(other){
 
 Circle::~Circle(){
 
-	cout << "circle dtor" << endl;
 }								//destructor
 
 
@@ -52,6 +50,6 @@ const Circle& Circle::operator=(const char* name){
 
 Circle operator+(int r, const Circle& other){
 
-	return Circle(r + other.getRadius());
+	return Circle(r + other.getRadius(), other.getName());
 
 }//returns a new Circle with added radius
